@@ -1,0 +1,224 @@
+.about-us-container {
+    font-family: "Arial", sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f9f9f9, #f1f1f1);
+    border-radius: 15px;
+    flex-wrap: wrap; /* Makes elements wrap on smaller screens */
+  }
+  
+  .hero-content {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 36px;
+    color: #004aad;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .hero-image {
+    flex: 1;
+    max-width: 500px;
+    width: 100%; /* Ensures it adapts to screen size */
+    border-radius: 15px;
+  }
+  
+  /* Zig-Zag Layout */
+  .zig-zag {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background: #f4f6fc;
+    border-radius: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Makes elements wrap on smaller screens */
+  }
+  
+  .zig-zag.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .about-us-image {
+    flex: 1;
+    max-width: 500px;
+    width: 100%; /* Ensures it adapts to screen size */
+    border-radius: 15px;
+  }
+  
+  .zig-zag .content {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .zig-zag.reverse .content {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+  
+  .zig-zag h2 {
+    font-size: 28px;
+    color: #004aad;
+    margin-bottom: 10px;
+  }
+  
+  .zig-zag p {
+    font-size: 16px;
+  }
+  
+  /* Why Choose Us Section */
+  .why-choose-us-section {
+    padding: 40px 20px;
+    background: #f9f9f9;
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+  
+  .why-choose-us-section h2 {
+    font-size: 28px;
+    color: #004aad;
+    margin-bottom: 20px;
+  }
+  
+  .why-choose-us-section ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    font-size: 16px;
+  }
+  
+  .why-choose-us-section li {
+    margin-bottom: 10px;
+  }
+  
+  /* Call to Action Section */
+  .cta-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: #004aad;
+    color: #ffffff;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+  
+  .cta-section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .cta-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background: #ff6f61;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #e65b52;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Tablets and Medium Screens */
+  @media (max-width: 1024px) {
+    .hero-section, .zig-zag {
+      flex-direction: column; /* Stack elements vertically */
+    }
+  
+    .hero-content, .zig-zag .content {
+      margin: 0 0 20px 0; /* Remove side margins for stacked layout */
+      text-align: center;
+    }
+  
+    .hero-image, .about-us-image {
+      margin: 0 auto; /* Center images */
+    }
+  
+    .zig-zag h2 {
+      font-size: 24px;
+    }
+  
+    .zig-zag p, .why-choose-us-section ul {
+      font-size: 14px;
+    }
+  
+    .cta-section h2 {
+      font-size: 26px;
+    }
+  
+    .cta-section p {
+      font-size: 16px;
+    }
+  }
+  
+  /* Mobile Phones */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 28px;
+    }
+  
+    .hero-content p, .zig-zag p {
+      font-size: 14px;
+    }
+  
+    .cta-section h2 {
+      font-size: 24px;
+    }
+  
+    .cta-section p {
+      font-size: 14px;
+    }
+  
+    .cta-button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Small Mobile Phones */
+  @media (max-width: 576px) {
+    .hero-content h1 {
+      font-size: 24px;
+    }
+  
+    .hero-content p, .zig-zag p {
+      font-size: 12px;
+    }
+  
+    .cta-section h2 {
+      font-size: 20px;
+    }
+  
+    .cta-section p {
+      font-size: 12px;
+    }
+  
+    .cta-button {
+      padding: 8px 16px;
+      font-size: 12px;
+    }
+  }
+  

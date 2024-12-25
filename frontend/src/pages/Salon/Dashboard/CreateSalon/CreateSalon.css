@@ -1,0 +1,12 @@
+/* src/pages/CreateSalon.css */
+
+
+
+
+/* Offcanvas width 80% on smaller screens */
+@media (max-width: 768px) {
+    .offcanvas-end {
+      width: 80% !important;
+    }
+  }
+  

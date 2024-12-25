@@ -1,0 +1,98 @@
+/* src/components/Auth/SignUp.css */
+
+/* Center the signup form */
+.signupContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Form box with shadow and layout adjustments */
+  .signupBox {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  /* Hover effect for better UI */
+  .signupBox:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Adjust layout for smaller screens */
+  @media (max-width: 768px) {
+    .signupBox {
+      padding: 20px;
+      width: 90%;
+    }
+  }
+  
+  /* Align first and last name inputs side-by-side */
+  .formRow {
+    display: flex;
+    gap: 15px;
+  }
+  
+  /* Stack the inputs vertically for mobile screens */
+  @media (max-width: 576px) {
+    .formRow {
+      flex-direction: column;
+    }
+  }
+  
+  /* Styling for the signup button */
+  .signupButton {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 15px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .signupButton:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+  
+  /* Login link styling */
+  .loginLink {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .loginLink:hover {
+    text-decoration: underline;
+  }
+  
+  /* Input field styling for better aesthetics */
+  .form-control {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .form-control:focus {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: #0d6efd;
+  }
+  

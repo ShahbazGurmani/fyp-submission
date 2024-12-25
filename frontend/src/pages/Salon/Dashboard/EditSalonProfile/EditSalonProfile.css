@@ -1,0 +1,90 @@
+/* ViewSalon.css */
+.salon-profile-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* General Styling for Titles */
+h1, h2 {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Cover Image Styling */
+.cover-image {
+  display: block;
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Container Styling */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Card Style for Stylists and Services */
+.stylist-card,
+.service-card {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stylist-card:hover,
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Location and About Section Styling */
+.location-info,
+.about-section,
+.salon-description {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.location-info p,
+.about-section p,
+.salon-description p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Individual Detail Styling */
+.location-info strong,
+.about-section strong {
+  color: #333;
+}
+
+.salon-description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Time Slots Styling */
+.time-slots {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.time-slots h4 {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
