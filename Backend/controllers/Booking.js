@@ -1,5 +1,6 @@
 import Stripe from "stripe";
 import { Booking } from "../models/BookingSchema.js";
+import UserAppointments from '../models/userBooking.js';
 import mongoose from "mongoose";
 
 const stripe = new Stripe("sk_test_51PIFiAFdq3SMwAKa5PSG4mWWwsyVJap6XCXFhv6ofUwAjZWXUPn6IS5uKPtmgrndnDNKSCGJvov1mEZtaOk6GPdh00dnsTmIuQ");
@@ -101,3 +102,46 @@ export const confirmPaymentAndCreateBooking = async (req, res) => {
     res.json({ error: error.message });
   }
 };
+
+
+//show all appointments
+
+
+
+ // Ensure you have the Salon model imported
+
+
+
+
+
+
+ export const ShowSalonAppointments = async (req, res) => {
+  try {
+    // Extract the salon ID from the request parameters
+    const salonId = req.params.id;
+
+    // Find all user bookings where the salon object's _id matches the provided salonId
+    // Populate the user details based on user_id
+    const appointments = await UserAppointments.find({ 'salon._id': salonId })
+      .populate('user_id', '-password'); // Exclude password for security
+
+    // If no appointments are found, respond accordingly
+    if (!appointments.length) {
+      return res.status(404).json({ message: 'No appointments found for this salon.' });
+    }
+
+    // Return the list of appointments with user details
+    res.status(200).json({
+      success: true,
+      message: 'Appointments retrieved successfully',
+      appointments
+    });
+  } catch (error) {
+    console.error("Error retrieving salon appointments:", error);
+    res.status(500).json({ message: 'An error occurred while fetching the appointments.' });
+  }
+};
+
+
+ 
+ 

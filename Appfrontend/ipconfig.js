@@ -1,0 +1,6 @@
+export const API_URL = "http://192.168.100.97:3500/api"
+export const IMAGELOCATION = "http://192.168.100.97:3500"
+export const IMAGEPATH= "http://192.168.100.97:3500"
+// export const API_URL = "https://salonsphereapp.onrender.com/api"
+// export const IMAGELOCATION = "https://salonsphereapp.onrender.com"
+// export const IMAGEPATH= "https://salonsphereapp.onrender.com"

@@ -12,7 +12,8 @@ import {
   viewSalonProfile,
   editSalonProfile,
   updateSalonProfile,
-  reviewController
+  reviewController,
+  deleteSalonProfile
   
 } from "../controllers/salonController.js";
 const router = express.Router();
@@ -37,6 +38,10 @@ router.put(
   salonPicsUpload, // Handles file uploads
   updateSalonProfile
 );
+
+
+//route for delete Salon  
+router.delete("/delete-salon/:id", deleteSalonProfile);
 
 //for reviews
 router.put("/:id/review",requireSignInForReviews, reviewController);

@@ -1,5 +1,7 @@
-import Salon from "../models/createSalonModel.js";
-import businessUser from "../models/salonAuthModel.js";
+import mongoose from "mongoose";
+import Salon from "../models/createSalonModel.js";  // Adjust the model path as per your project structure
+import BusinessUser from "../models/salonAuthModel.js";  // Adjust the model path
+
 // Function to add a salon with type specified in the request body
 export const createSalonProfile = async (req, res) => {
   try {
@@ -222,6 +224,53 @@ export const updateSalonProfile = async (req, res) => {
     });
   }
 };
+
+
+
+
+// Function to delete salon profile and the corresponding user from BusinessUser model
+export const deleteSalonProfile = async (req, resp) => {
+  try {
+    const userId = req.params.id;
+
+    // Find and delete the salon profile
+    const salonProfile = await Salon.findOneAndDelete({ user: userId });
+    if (!salonProfile) {
+      return resp.status(404).send({
+        success: false,
+        message: "Salon profile not found for this user",
+      });
+    }
+
+    // Delete the corresponding user from the BusinessUser model
+    const businessUser = await BusinessUser.findByIdAndDelete(userId);
+    if (!businessUser) {
+      return resp.status(404).send({
+        success: false,
+        message: "Business user not found for this user",
+      });
+    }
+
+    resp.status(200).send({
+      success: true,
+      message: "Salon profile and user account deleted successfully",
+    });
+  } catch (err) {
+    console.error("Error in deleteSalonProfile:", err);
+    resp.status(500).send({
+      success: false,
+      message: "Server Error",
+      error: err.message,
+    });
+  }
+};
+
+
+
+
+
+
+
 
 
 //for getting reviews 

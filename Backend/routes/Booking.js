@@ -3,7 +3,8 @@ import {
 
   
   confirmPaymentAndCreateBooking,
-  createPaymentIntent
+  createPaymentIntent,
+  ShowSalonAppointments
   
 } from "../controllers/Booking.js";
 
@@ -16,4 +17,5 @@ router.post("/create-booking", confirmPaymentAndCreateBooking);
 // router.post("/create-payment-intent", Checkout);
 // router.post("/confirm", confirmBooking);
 
+router.get("/salon-appointments/:id", ShowSalonAppointments);
 export default router;

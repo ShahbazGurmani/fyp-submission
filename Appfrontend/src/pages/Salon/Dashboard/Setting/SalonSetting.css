@@ -1,0 +1,79 @@
+.salon-setting {
+    padding: 20px;
+  }
+  
+  .setting-points {
+    margin-bottom: 30px;
+  }
+  
+  .setting-item {
+    margin: 10px 0;
+  }
+  
+  .setting-item input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  .setting-item span {
+    font-weight: bold;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    font-size: 14px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+  }
+  

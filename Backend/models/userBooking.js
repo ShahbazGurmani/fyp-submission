@@ -19,6 +19,7 @@ const userBookingSchema = new mongoose.Schema(
     selectedTime: String,
     customerEmail: String,
     paymentIntentId: String,
+    paymentAmount:String,
     status: {
       type: String,
       enum: ['ongoing', 'completed', 'cancelled'],

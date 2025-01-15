@@ -1,0 +1,39 @@
+/* AboutSection.css */
+
+/* Full Section Styling */
+.about-section {
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Card styles for right column */
+  .about-section-card {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Link styled as a button */
+  .custom-button {
+    display: inline-block;
+    background-color: white; /* White background initially */
+    color: black; /* Black text initially */
+    border: 2px solid black; /* Black border */
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none; /* Remove link underline */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    text-align: center;
+  }
+  
+  .custom-button:hover {
+    background-color: black; /* Black background on hover */
+    color: white; /* White text on hover */
+  }
+  

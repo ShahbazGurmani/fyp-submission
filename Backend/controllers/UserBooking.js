@@ -34,7 +34,7 @@ export const getUserBookings = async (req, res) => {
 export const addBooking = async (req, res) => {
   try {
     const { user_id, salonName, salon, selectedServices, selectedStylist, 
-            selectedDate, selectedTime, customerEmail, paymentIntentId } = req.body;
+            selectedDate, selectedTime, customerEmail, paymentIntentId,paymentAmount } = req.body;
 
     // Check if the user exists
     const user = await User.findById(user_id);
@@ -53,6 +53,7 @@ export const addBooking = async (req, res) => {
       selectedTime,
       customerEmail,
       paymentIntentId,
+      paymentAmount
     });
 
     // Save the new booking to the database

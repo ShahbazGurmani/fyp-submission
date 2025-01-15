@@ -1,0 +1,116 @@
+/* Full Section Styling */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #f7f7f7;
+  overflow: hidden;
+  position: relative; /* Ensure section doesn't interfere with modal */
+ 
+}
+
+/* Flex container for the layout */
+.hero-row {
+  height: 100%;
+}
+
+/* Styling for the heading to make it visually appealing */
+.hero-text-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.2;
+}
+
+.hero-text-section h2 {
+  font-size: 1.8rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Search Card for wrapping only the input and button group */
+.search-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+/* Search Input with Rounded Corners */
+.hero-input {
+  border: none;
+  border-radius: 50px 0 0 50px;
+  padding: 15px;
+  font-size: 1rem;
+  background-color: #f7f7f7;
+}
+
+/* Input Group for Icon and Button */
+.search-bar {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon inside the search field */
+.locate-icon {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.locate-icon:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Find Button: Black background, white text initially */
+.find-button {
+  background-color: black !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.find-button:hover {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black !important;
+}
+
+/* Right Section: Image */
+.hero-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+}
+
+/* Styling for the image */
+.hero-image {
+  width: 80%;
+  height: 100%;
+  max-width: 100%;
+}
+
+/* Modal styling to ensure it appears above everything */
+.modal-backdrop {
+  z-index: 1040 !important; /* Ensure backdrop appears on top */
+}
+
+.modal {
+  z-index: 1050 !important; /* Ensure modal itself appears on top */
+  position: relative; /* Ensure modal is correctly positioned */
+}
+
+

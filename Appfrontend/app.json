@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "SalonSphere",
+    "slug": "SalonSphere",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./splash/splash.png",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ghaffar0649.SalonSphere"
+    },
+    "android": {
+      "permissions": [
+        "INTERNET",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "usesCleartextTraffic": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./splash/splash.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.ghaffar0649.SalonSphere",
+      "versionCode": 1,
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBUl0FdQcctykxH0WhYLbaGunLTJt8Wcoc"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./splash/splash.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c1a501a4-f688-4d23-979c-c020ca7898f3"
+      }
+    }
+  }
+}
